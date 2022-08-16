@@ -1,4 +1,11 @@
- <% @articles.each do |article| %>
-  <h1><%= article.title %></h1>
-  <p><%= article.content %></p>
-<% end %>
+<header>
+  <h1>Wikinimous</h1>
+  <%= link_to "New Article", "" %>
+</header>
+
+<div class="content">
+  <% @articles.each do |article| %>
+    <h1><%= article.title %></h1>
+    <p><%= article.content %></p>
+  <% end %>
+</div>
